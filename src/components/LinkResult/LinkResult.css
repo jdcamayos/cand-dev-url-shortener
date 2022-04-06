@@ -1,0 +1,42 @@
+.result {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 1rem;
+}
+
+.result p {
+	color: #fff;
+	border: 1px solid var(--primary-color);
+	padding: 0.5rem 1rem;
+	margin-right: 1rem;
+}
+
+.result button {
+	padding: 0.5rem 1rem;
+	color: #fff;
+	cursor: pointer;
+	background-color: var(--primary-color);
+	border: none;
+	transition: 0.3s;
+}
+
+.result button.copied {
+	background-color: #fff;
+	color: var(--primary-color);
+}
+
+.noData {
+	color: #fff;
+	font-size: 1rem;
+}
+
+@media screen and (max-width: 450px) {
+	.result {
+		justify-content: center;
+	}
+	.result p {
+		margin-right: 0;
+	}
+}
