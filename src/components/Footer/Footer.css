@@ -1,0 +1,54 @@
+.footer {
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 2rem;
+}
+
+.footer p {
+	color: #fff;
+	font-weight: 500;
+	font-size: 1.1rem;
+}
+.footer p .containerIcon {
+	display: inline-block;
+	position: relative;
+	width: 2rem;
+	height: 2rem;
+	text-align: center;
+}
+
+.footer p .containerIcon span {
+	position: absolute;
+	margin: auto;
+	bottom: 25%;
+	right: 50%;
+	transform: translate(50%, 50%);
+	color: rgb(235, 35, 0);
+	animation-name: pulse;
+	animation-timing-function: ease-out;
+	animation-duration: 1.5s;
+	animation-delay: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+	0%,
+	100% {
+		font-size: 1.2rem;
+	}
+	50% {
+		font-size: 1.6rem;
+	}
+}
+
+.footer p a {
+	margin-left: 0.5rem;
+	color: var(--primary-color);
+	text-decoration: none;
+	font-family: 'Playfair Display', serif;
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+.footer p a:hover {
+	text-decoration: underline;
+}
